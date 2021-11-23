@@ -1,0 +1,36 @@
+Checklist `MoodPanda`:
+
+1.Registration Form:
+1.1 Verify that the Create MoodPanda Account contains First Name, Surname Initial, Gender, Year of Birth, Email, Password,
+ Confirm Password.
+1.2 Verify that clicking on Submit button after entering all the mandatory fields, submits the data to the server.
+1.3 Verify that system generates a validation message when clicking on submit button without filling all the mandatory fields.
+1.4 Verify that entering blank spaces on mandatory fields lead to validation error.
+
+2. Update mood:
+2.1 Verify that clicking on Update mood button opens Rate Your Happiness page.
+2.2 Verify that User is able to update mood: date now, yesterday or another date in the past.
+2.3 Verify that User is able to leave message 400 chars max.
+
+3. Account:
+3.1 Verify that clicking on Edit profile button opens Account page.
+3.2 Verify that User is able to edit all fields on Account page.
+3.3 Verify that User is able to delete account.
+3.4 Verify that User is able to change avatar.
+3.5 Verify that User isn't able to connect with social media.
+3.6 Verify that User is able to torn on Privacy mode.
+3.7 Verify that User is able to print/download Report.
+3.8 Verify that User is able to logout.
+
+4. Community:
+4.1 Verify that User is able to seePeople User's following.
+4.2 Verify that User is able to become a MoodPanda patron.
+4.3 Verify that clicking on My conversation button shows all conversation.
+4.4 Verify that User is able to contact Chief Panda
+
+5. Feed page:
+5.1 Verify that User is able to see Update mood message from other users with their username, mood rating and date.
+5.2 Verify that User is able to send Reply 250 chars max.
+5.3 Verify that User is able to Find a Helpline clicking on I'm in crisis button.
+5.4 Verify that User is able to report abuse clicking on Report abuse button.
+5.5 Verify that number of Hugs increases according to clicking on Send a Hug button.
