@@ -1,11 +1,19 @@
 package pages;
 
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import static com.codeborne.selenide.Selenide.$;
 
-public class RateYourHappinessModalPage extends BasePage {
-    int count = 0;
+public class RateYourHappinessModalPage{
+    public static final String SLIDER_CSS = ".ui-slider-handle";
+    public static final String UPDATE_MOOD_BUTTON = ".ButtonUpdate";
+    public static final String TEXT_BOX_CSS = "#TextBoxUpdateMoodTag";
+    public static final String CHARACTER_COUNTER_CSS = "#CharacterCounter";
+
+    private static int count = 0;
 
     public RateYourHappinessModalPage updateMood(int moodValue) {
         $(SLIDER_CSS).click();

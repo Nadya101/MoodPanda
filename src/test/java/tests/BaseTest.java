@@ -11,7 +11,6 @@ public class BaseTest {
     LoginPage loginPage;
     FeedPage feedPage;
     MoodUpdatedModalPage moodUpdatedModalPage;
-    MyDiaryPage myDiaryPage;
     RateYourHappinessModalPage rateYourHappinessModalPage;
 
     @BeforeMethod
@@ -22,8 +21,6 @@ public class BaseTest {
         Configuration.headless = false;
         loginPage = new LoginPage();
         feedPage = new FeedPage();
-        myDiaryPage = new MyDiaryPage();
-        rateYourHappinessModalPage = new RateYourHappinessModalPage();
         moodUpdatedModalPage = new MoodUpdatedModalPage();
     }
 
