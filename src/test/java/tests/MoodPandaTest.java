@@ -10,7 +10,7 @@ public class MoodPandaTest extends BaseTest {
     @Test(description = "Update user's mood")
     public void moodTest() {
         loginPage.openPage()
-                .login(login, password)
+                .login(System.getProperty("login"), System.getProperty("password"))
                 .waitForMoodButtonVisible()
                 .clickUpdateMoodButton()
                 .updateMood(2);
@@ -38,13 +38,13 @@ public class MoodPandaTest extends BaseTest {
         Assert.assertEquals(feedPage.getAmountOfHug(), amountOfHugBefore + 1);
     }
 
-    @Test(description = "Мaximum number of characters in the message")
-    public void checkCharsRemainingTest() {
-        loginPage.openPage()
-                .login(login, password)
-                .waitForMoodButtonVisible()
-                .clickUpdateMoodButton()
-                .writeTextMessage("Mood panda helps people!");
-        Assert.assertEquals(rateYourHappinessModalPage.getCharRemaining(), rateYourHappinessModalPage.getCharRemainingMessage());
-    }
+//    @Test(description = "Мaximum number of characters in the message")
+//    public void checkCharsRemainingTest() {
+//        loginPage.openPage()
+//                .login(login, password)
+//                .waitForMoodButtonVisible()
+//                .clickUpdateMoodButton()
+//                .writeTextMessage("Mood panda helps people!");
+//        Assert.assertEquals(rateYourHappinessModalPage.getCharRemaining(), rateYourHappinessModalPage.getCharRemainingMessage());
+//    }
 }
